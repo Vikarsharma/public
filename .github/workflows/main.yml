@@ -1,7 +1,7 @@
 Name : Basic workflow Dispatch Example
 
 on:
-  workflow_dispatch:
+  public:
 
 Jobs : 
  deploy:
