@@ -7,4 +7,4 @@ Jobs:
  deploy:
   runs-on: windows
    steps:
-    -run: curl.exe --location "http://localhost:8300/ice/api/2.0/rulerun" --header "accessToken: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySUQiOjcsInJlcG9zaXRvcnkiOiIxNzgwIiwidXNlck5hbWUiOiJhZG1pbiIsImNhbGxlZEZyb20iOiJSRVNUX0FQSSIsInJhbmRvbSI6IjJoYXRxYmNza29hcnUzc2RyZ28zY3Nta3B2IiwiZXhwIjoxNzM3NTU4Mzk4fQ.LkShqtkV4HYcJfZ996YcysALA3fbISEOQCbGjwL8rcE" --header "Content-Type: application/json" --data "{\"ruleId\": 1393}"
+    -run: curl.exe --location "http://localhost:8300/ice/api/2.0/rulerun" --header "accessToken: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySUQiOjcsInJlcG9zaXRvcnkiOiIxNzgwIiwidXNlck5hbWUiOiJhZG1pbiIsImNhbGxlZEZyb20iOiJSRVNUX0FQSSIsInJhbmRvbSI6IjJoYXRxYmNza29hcnUzc2RyZ28zY3Nta3B2IiwiZXhwIjoxNzM3NTU4Mzk4fQ.LkShqtkV4HYcJfZ996YcysALA3fbISEOQCbGjwL8rcE" --header "Content-Type: application/json" --data "{"ruleId": 1393}"
