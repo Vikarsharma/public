@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Run Curl Command
         run: |
-          curl.exe --location "http://localhost:8300/ice/api/2.0/rulerun" --header "accessToken: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySUQiOjcsInJlcG9zaXRvcnkiOiIxNzgwIiwidXNlck5hbWUiOiJhZG1pbiIsImNhbGxlZEZyb20iOiJSRVNUX0FQSSIsInJhbmRvbSI6IjJoYXRxYmNza29hcnUzc2RyZ28zY3Nta3B2IiwiZXhwIjoxNzM3NTU4Mzk4fQ.LkShqtkV4HYcJfZ996YcysALA3fbISEOQCbGjwL8rcE"           --header "Content-Type: application/json"           --data "{"ruleId": 1393}"
+          curl.exe --location "https://test.icedq.ai/ice/api/2.0/rulerun" --header "accessToken: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySUQiOjcsInJlcG9zaXRvcnkiOiJpY2VkcS1kZW1vLXNlcnZlciIsInVzZXJOYW1lIjoiYWRtaW4iLCJjYWxsZWRGcm9tIjoiV0VCIiwicmFuZG9tIjoicXZhZmdjdHZicHU1bWJ1aW1lMnZqZm1waG4iLCJleHAiOjE3MzAzMTAwNzZ9.cfI8bO_n0grYcC7fYIVWGPXpdfzw8SuBniCSWuk7fyY"           --header "Content-Type: application/json"           --data "{"ruleId": 80574}"
