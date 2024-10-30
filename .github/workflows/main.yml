@@ -1,15 +1,16 @@
 name: Basic Workflow Dispatch Example
 
 on:
-  workflow_dispatch: # Use workflow_dispatch for manual triggers
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: windows-latest
     steps:
       - name: Run Curl Command
+        shell: bash
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use correct syntax for accessing GitHub secrets
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           curl -k --location "https://test.icedq.ai/ice/api/2.0/rulerun" \
           --header "accessToken: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySUQiOjcsInJlcG9zaXRvcnkiOiJpY2VkcS1kZW1vLXNlcnZlciIsInVzZXJOYW1lIjoiYWRtaW4iLCJjYWxsZWRGcm9tIjoiV0VCIiwicmFuZG9tIjoiMWpmdTA0OG9lbjcwYXA2YnU3a2Q1djF2NTgiLCJleHAiOjE3MzU1MDI5NTN9.3bWflcBJ2X1pEj2xcaq1qmi09Vwil2hvIXXnX7Z-ytg" \
