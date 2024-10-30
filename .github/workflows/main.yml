@@ -9,6 +9,5 @@ jobs:
     steps:
       - name: Run Curl Command
         run: 
-         # curl -v telnet://test.icedq.ai:443
  curl -k --location "https://test.icedq.ai/ice/api/2.0/rulerun" --header "accessToken: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySUQiOjcsInJlcG9zaXRvcnkiOiJpY2VkcS1kZW1vLXNlcnZlciIsInVzZXJOYW1lIjoiYWRtaW4iLCJjYWxsZWRGcm9tIjoiV0VCIiwicmFuZG9tIjoiMWpmdTA0OG9lbjcwYXA2YnU3a2Q1djF2NTgiLCJleHAiOjE3MzU1MDI5NTN9.3bWflcBJ2X1pEj2xcaq1qmi09Vwil2hvIXXnX7Z-ytg" --header "Content-Type: application/json" --data "{\"ruleId\": 80574}"     
  GITHUB_TOKEN: ${{ secrets.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}} # Use the correct syntax for the token
