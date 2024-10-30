@@ -8,7 +8,8 @@ jobs:
     runs-on: windows-latest # Indicate the specific Windows version
     steps:
       - name: Run Curl Command
-        run: |
-          curl.exe --location "https://test.icedq.ai/ice/api/2.0/rulerun" --header "accessToken: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySUQiOjcsInJlcG9zaXRvcnkiOiJpY2VkcS1kZW1vLXNlcnZlciIsInVzZXJOYW1lIjoiYWRtaW4iLCJjYWxsZWRGcm9tIjoiV0VCIiwicmFuZG9tIjoicXZhZmdjdHZicHU1bWJ1aW1lMnZqZm1waG4iLCJleHAiOjE3MzAzMTAwNzZ9.cfI8bO_n0grYcC7fYIVWGPXpdfzw8SuBniCSWuk7fyY" --header "Content-Type: application/json" --data "{\"ruleId\": 80574}"
+        run: 
+          curl -v telnet://test.icedq.ai:443
+         # curl --location "https://test.icedq.ai/ice/api/2.0/rulerun" --header "accessToken: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySUQiOjcsInJlcG9zaXRvcnkiOiJpY2VkcS1kZW1vLXNlcnZlciIsInVzZXJOYW1lIjoiYWRtaW4iLCJjYWxsZWRGcm9tIjoiV0VCIiwicmFuZG9tIjoicXZhZmdjdHZicHU1bWJ1aW1lMnZqZm1waG4iLCJleHAiOjE3MzAzMTAwNzZ9.cfI8bO_n0grYcC7fYIVWGPXpdfzw8SuBniCSWuk7fyY" --header "Content-Type: application/json" --data "{\"ruleId\": 80574}"
         env:
           GITHUB_TOKEN: ${{ secrets.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}} # Use the correct syntax for the token
